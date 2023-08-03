@@ -1,10 +1,9 @@
 // IMPORTS
 import { useEffect, useState } from "react"
-import { Navbar,Container } from "react-bootstrap"
+import { Navbar,Container,Nav } from "react-bootstrap"
 import social1 from "../assets/img/email.png"
 import social2 from "../assets/img/linkedin.png"
 import social3 from "../assets/img/github.png"
-
 
 export const NavBar = () => {
     // CONSTANTS
@@ -34,7 +33,7 @@ export const NavBar = () => {
                     <img src={''} alt="logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <span className="navbar-toggler-icon"></span>
+                    {/* <span className="navbar-toggler-icon"></span> */}
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
                     <Nav.Link 
@@ -58,11 +57,16 @@ export const NavBar = () => {
                   </Nav>
                   <span className="navbar-text">
                     <div className="social-icon">
-                        <a href="#"><img src={social1} alt=""/></a>
-                        <a href="#"><img src={social2} alt=""/></a>
-                        <a href="#"><img src={social3} alt=""/></a>
+                        <a href="mailto:harinisritharar@gmail.com">
+                            <img src={social1} alt="email"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harini-sritharar/">
+                            <img src={social2} alt="linkedin"/>
+                        </a>
+                        <a href="https://github.com/Harini-Sritharar">
+                            <img src={social3} alt="github"/>
+                        </a>
                     </div>
-                    <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect!</span></button>
                   </span>
                 </Navbar.Collapse>
             </Container>
