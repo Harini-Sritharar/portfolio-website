@@ -1,11 +1,10 @@
 // IMPORTS
 import { useState,useEffect, useCallback,useMemo} from "react"
 import {Container,Row,Col} from  "react-bootstrap"
-import cv from "../assets/cv.pdf"
-// import { ArrowRightCircle } from "react-bootstrap-icons"
+
 export const Banner = () => {
     // CONSTS
-    const toRotate = useMemo(() => ["Student", "Developer", "Designer"],[]);
+    const toRotate = useMemo(() => ["Developer", "Passionate", "Designer", "Creative"],[]);
     const [loopNum,setLoopNum] = useState(0);
     const [isDeleting,setIsDeleting] = useState(false);
     const [text,setText] = useState('');
@@ -47,17 +46,7 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-centre">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">
-                            <a href = {cv} download="Harini Sritharar CV.pdf">
-                                My CV
-                            </a>
-                        </span>
-                         {/* <span className="tagline">My Portfolio</span> */}
-                        <h1>{`Hi I'm Harini Sritharar `}<br></br><span className="wrap">{text}</span></h1>
-                        <button onClick={() => console.log('connect')}>Let's connect!</button>
-                    </Col>
-                    <Col xs={12} md={6} xl={5}>
-                       <img src ={''} alt="Header Img"/>
+                        <h1>{`Harini Sritharar `}<br></br><span className="wrap">{text}</span></h1>
                     </Col>
                 </Row>
             </Container>

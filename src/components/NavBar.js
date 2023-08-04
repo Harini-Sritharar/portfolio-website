@@ -1,9 +1,10 @@
 // IMPORTS
 import { useEffect, useState } from "react"
-import { Navbar,Container,Nav } from "react-bootstrap"
+import { Container, Nav, Navbar } from "react-bootstrap"
 import social1 from "../assets/img/email.png"
 import social2 from "../assets/img/linkedin.png"
 import social3 from "../assets/img/github.png"
+import cv from "../assets/cv.pdf"
 
 export const NavBar = () => {
     // CONSTANTS
@@ -29,9 +30,6 @@ export const NavBar = () => {
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
-                <Navbar.Brand href="#home">
-                    <img src={''} alt="logo" />
-                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
@@ -51,10 +49,19 @@ export const NavBar = () => {
                         href="#projects" 
                         className = {activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} 
                         onClick = {() => onUpdateActiveLink('projects')}> 
-                         Projects
+                        Projects
                     </Nav.Link>
+                
+                   <Nav.Link 
+                        href={cv} 
+                        className = {activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}>
+                        My CV
+                    </Nav.Link>                  
+        
                   </Nav>
+                  {/* Social Icons */}
                   <span className="navbar-text">
+                 
                     <div className="social-icon">
                         <a href="mailto:harinisritharar@gmail.com">
                             <img src={social1} alt="email"/>
