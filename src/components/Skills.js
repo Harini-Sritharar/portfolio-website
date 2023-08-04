@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel"
 import {Container,Col,Row} from "react-bootstrap"
 import 'react-multi-carousel/lib/styles.css'
 import skills from "../assets/img/skills-icon.jpg"
-import bg_left from "../assets/img/bg-left.avif"
+import sk from "../assets/img/skills.png"
 
 export const Skills = () => {
 // CONSTS
@@ -31,23 +31,35 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Dummy Text<br></br> More Dummy Text</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={skills} alt='img'/>
                                     <h5>Web Development</h5>
                                 </div>
+
                                 <div className="item">
-                                    <img src={skills} alt='img'/>
-                                    <h5>Web Development2</h5>
+                                    <img src={sk} alt='img'/>
+                                    <h5>Machine Learning</h5>
                                 </div>
+
                                 <div className="item">
                                     <img src={skills} alt='img'/>
-                                    <h5>Web Development3</h5>
+                                    <h5>Problem Solving</h5>
                                 </div>
+
+                                <div className="item">
+                                    <img src={sk} alt='img'/>
+                                    <h5>Mobile Development</h5>
+                                </div>
+
                                 <div className="item">
                                     <img src={skills} alt='img'/>
-                                    <h5>Web Development4</h5>
+                                    <h5>Part Time Tutor</h5>
+                                </div>
+
+                                <div className="item">
+                                    <img src={sk} alt='img'/>
+                                    <h5>Technical Writing</h5>
                                 </div>
                             </Carousel>
                         </div>
