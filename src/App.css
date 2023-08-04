@@ -258,6 +258,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+  color: #ffffff;
 }
 .banner h1 {
   font-size: 65px;
@@ -351,7 +352,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects CSS ************/
-/* .project {
+.project {
   padding: 80px 0;
   position: relative;
   background-color: black;
@@ -423,13 +424,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
-.proj-imgbx {
+.proj-imgbox {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
 }
-.proj-imgbx::before {
+.proj-imgbox::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   opacity: 0.85;
@@ -438,10 +439,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 0;
   transition: 0.4s ease-in-out;
 }
-.proj-imgbx:hover::before {
+.proj-imgbox:hover::before {
   height: 100%;
 }
-.proj-txtx {
+.proj-tx {
   position: absolute;
   text-align: center;
   top: 65%;
@@ -451,17 +452,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
 }
-.proj-imgbx:hover .proj-txtx {
+.proj-imgbox:hover .proj-tx {
   top: 50%;
   opacity: 1;
 }
-.proj-txtx h4 {
+.proj-tx h4 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
 }
-.proj-txtx span {
+.proj-tx span {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
@@ -474,7 +475,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
-} */
+}
 
 /************ Projects CSS ************/
 /* .contact {

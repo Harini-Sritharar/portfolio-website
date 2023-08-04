@@ -1,6 +1,7 @@
 // IMPORTS
 import { useState,useEffect, useCallback,useMemo} from "react"
 import {Container,Row,Col} from  "react-bootstrap"
+import cv from "../assets/cv.pdf"
 // import { ArrowRightCircle } from "react-bootstrap-icons"
 export const Banner = () => {
     // CONSTS
@@ -46,7 +47,12 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-centre">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">My Portfolio</span>
+                        <span className="tagline">
+                            <a href = {cv} download="Harini Sritharar CV.pdf">
+                                My CV
+                            </a>
+                        </span>
+                         {/* <span className="tagline">My Portfolio</span> */}
                         <h1>{`Hi I'm Harini Sritharar `}<br></br><span className="wrap">{text}</span></h1>
                         <button onClick={() => console.log('connect')}>Let's connect!</button>
                     </Col>

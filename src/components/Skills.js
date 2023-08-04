@@ -5,8 +5,6 @@ import 'react-multi-carousel/lib/styles.css'
 import skills from "../assets/img/skills-icon.jpg"
 import bg_left from "../assets/img/bg-left.avif"
 
-
-
 export const Skills = () => {
 // CONSTS
     const responsive = {
@@ -57,6 +55,7 @@ export const Skills = () => {
                 </Row>
             </Container>
             <img className="background-image-left" src={bg_left} alt='img'/>
+            
         </section>
     )
 }
