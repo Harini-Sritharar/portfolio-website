@@ -2,8 +2,8 @@
 import Carousel from "react-multi-carousel"
 import {Container,Col,Row} from "react-bootstrap"
 import 'react-multi-carousel/lib/styles.css'
-import skills from "../assets/img/skills-icon.jpg"
-import sk from "../assets/img/skills.png"
+import skills from "../assets/img/skills/skills-icon.jpg"
+import skills2 from "../assets/img/skills/skills.png"
 
 export const Skills = () => {
 // CONSTS
@@ -38,7 +38,7 @@ export const Skills = () => {
                                 </div>
 
                                 <div className="item">
-                                    <img src={sk} alt='img'/>
+                                    <img src={skills2} alt='img'/>
                                     <h5>Machine Learning</h5>
                                 </div>
 
@@ -48,7 +48,7 @@ export const Skills = () => {
                                 </div>
 
                                 <div className="item">
-                                    <img src={sk} alt='img'/>
+                                    <img src={skills2} alt='img'/>
                                     <h5>Mobile Development</h5>
                                 </div>
 
@@ -58,7 +58,7 @@ export const Skills = () => {
                                 </div>
 
                                 <div className="item">
-                                    <img src={sk} alt='img'/>
+                                    <img src={skills2} alt='img'/>
                                     <h5>Technical Writing</h5>
                                 </div>
                             </Carousel>

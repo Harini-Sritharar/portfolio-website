@@ -6,8 +6,8 @@ import cv from "../assets/cv.pdf"
 import { LangCard } from "./LangCard"
 import { ProjectCard } from "./ProjectCard"
 // IMAGES
-import quiz_app_img from '../assets/img/quiz_app.jpeg'
-import viz_img from '../assets/img/viz.png'
+import quiz_app_img from '../assets/img/projects/quiz_app.jpeg'
+import viz_img from '../assets/img/projects/viz.png'
 
 
 export const Projects = () => {

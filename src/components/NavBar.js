@@ -1,9 +1,9 @@
 // IMPORTS
 import { useEffect, useState } from "react"
 import { Container, Nav, Navbar } from "react-bootstrap"
-import social1 from "../assets/img/email.png"
-import social2 from "../assets/img/linkedin.png"
-import social3 from "../assets/img/github.png"
+import social1 from "../assets/img/social/email.png"
+import social2 from "../assets/img/social/linkedin.png"
+import social3 from "../assets/img/social/github.png"
 import cv from "../assets/cv.pdf"
 
 export const NavBar = () => {
