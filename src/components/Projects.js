@@ -8,6 +8,7 @@ import { ProjectCard } from "./ProjectCard"
 // IMAGES
 import quiz_app_img from '../assets/img/projects/quiz_app.jpeg'
 import viz_img from '../assets/img/projects/viz.png'
+import img from '../assets/img/projects/web.webp'
 
 
 export const Projects = () => {
@@ -24,6 +25,12 @@ export const Projects = () => {
             language: "C",
             imgUrl: viz_img
         },
+        {
+            title: "Portfolio Website",
+            description: "React Website which serves as a dynamic portfolio",
+            language: "JavaScript, CSS",
+            imgUrl: img
+        }
     ]
 
     const language_cards = [
@@ -74,7 +81,7 @@ export const Projects = () => {
                                                 Inquisitive, Eager, Committed
                                             </h2>
                                             <p>
-                                                I am a first year MEng Computing student at Imperial College London.
+                                                I am a second year MEng Computing student at Imperial College London.
                                                 <br></br>
                                                 <br></br>
 
@@ -82,7 +89,7 @@ export const Projects = () => {
                                                 Throughout the last two years, I have gained an insight into a multitude of programming languages and become skilled with Git.
                                                 <br></br>
                                                 <br></br>
-                                                Seeking to obtain experience and skills as a software engineer
+                                                Seeking to obtain experience and skills as a software engineer via an internship
                                                 <br></br>
                                                 <br></br>
                                                 <a href={cv}> My CV </a>
