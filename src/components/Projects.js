@@ -9,6 +9,9 @@ import { ProjectCard } from "./ProjectCard"
 import quiz_app_img from '../assets/img/projects/quiz_app.jpeg'
 import viz_img from '../assets/img/projects/viz.png'
 import img from '../assets/img/projects/web.webp'
+import pintos from '../assets/img/projects/pintos.png'
+import wacc from '../assets/img/projects/compiler.png'
+import ichack from '../assets/img/projects/hackathon.png'
 
 
 export const Projects = () => {
@@ -30,6 +33,24 @@ export const Projects = () => {
             description: "React Website which serves as a dynamic portfolio",
             language: "JavaScript, CSS",
             imgUrl: img
+        },
+        {
+            title: "Pintos",
+            description: "Operating System for the 80x86 architecture",
+            language: "C",
+            imgUrl: pintos
+        },
+        {
+            title: "WACC",
+            description: "Compiler written for a basic language called WACC",
+            language: "Scala",
+            imgUrl: wacc
+        },
+        {
+            title: "ICHack 2024 (Hackathon Project)",
+            description: "Developed the front end for a innovative teaching platform to help young children get  ",
+            language: "C",
+            imgUrl: ichack
         }
     ]
 
@@ -50,7 +71,13 @@ export const Projects = () => {
             title: "Python",
         },
         {
-            title: "JavaScript",
+            title: "React",
+        },
+        {
+            title: "Scala",
+        },
+        {
+            title: "HTML/CSS",
         },
     ]
 
@@ -85,8 +112,7 @@ export const Projects = () => {
                                                 <br></br>
                                                 <br></br>
 
-                                                I love experimenting with new programming languages and frameworks. Last year, I taught myself Dart for my A Level project and have obtained experience in mobile app development.
-                                                Throughout the last two years, I have gained an insight into a multitude of programming languages and become skilled with Git.
+                                                I love experimenting with new programming languages and frameworks. Throughout the last three years, I have gained an insight into a multitude of programming languages via personal and group projects and become skilled with Git.
                                                 <br></br>
                                                 <br></br>
                                                 Seeking to obtain experience and skills as a software engineer via an internship
