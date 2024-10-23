@@ -46,10 +46,13 @@ body {
   font-family: 'Quicksand', sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+h3 {
+  text-align: center;
 }
 
 p, a, li, button, ul {
@@ -350,20 +353,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto 15px auto;
 }
 
-/************ Projects CSS ************/
-.project {
+/************ Sections CSS ************/
+.section {
   padding: 80px 0;
   position: relative;
   background-color: rgba(2,0,40,255);
   /* background-image: url('./assets/img/banner-bg.jpg'); */
 
 }
-.project h2 {
+.section h2 {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
 }
-.project p {
+.section p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -372,17 +375,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
-.project .nav.nav-pills {
+.section .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
-.project .nav.nav-pills .nav-item {
+.section .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
-.project .nav.nav-pills .nav-link {
+.section .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
@@ -396,7 +399,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
-.project .nav.nav-pills .nav-link::before {
+.section .nav.nav-pills .nav-link::before {
     content: "";
     position: absolute;
     width: 0;
@@ -407,7 +410,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     z-index: -1;
     transition: 0.3s ease-in-out;
 }
-.project .nav.nav-pills .nav-link.active::before {
+.section .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
 }
 
@@ -428,7 +431,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
-  
+}
+.proj-img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 .proj-imgbox::before {
   content: "";
@@ -445,7 +452,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-tx {
   position: absolute;
   text-align: center;
-  top: 65%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s ease-in-out;

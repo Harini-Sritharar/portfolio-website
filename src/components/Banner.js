@@ -4,7 +4,7 @@ import {Container,Row,Col} from  "react-bootstrap"
 
 export const Banner = () => {
     // CONSTS
-    const toRotate = useMemo(() => ["Developer", "Designer", "Creative","Passionate"],[]);
+    const toRotate = useMemo(() => ["Software Developer","Motivated","Passionate"],[]);
     const [loopNum,setLoopNum] = useState(0);
     const [isDeleting,setIsDeleting] = useState(false);
     const [text,setText] = useState('');
